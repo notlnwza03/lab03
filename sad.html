@@ -1,0 +1,412 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Jir4yu.me บล็อกส่วนตัวที่เขียนเรื่องไร้สาระไม่เป็นเรื่อง บันทึกเรื่องราวที่เกิดขึ้นจริง ผ่านความรู้สึกจริงที่ถูกถ่ายทอดลงสู่ตัวหนังสือเพียงไม่กี่บรรทัด">
+<meta name="keywords" content="jir4yu.me, รับเขียนเว็บไซต์, เรื่องราวทั่วไป, บล็อคส่วนตัว, JindaTheme, personal blog, wordpress theme, website development">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://www.jir4yu.me/xmlrpc.php" />
+<link rel="apple-touch-icon" sizes="57x57" href="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/favicon/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/favicon/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/favicon/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/favicon/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/favicon/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/favicon/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/favicon/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/favicon/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/favicon/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/favicon/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/favicon/favicon-194x194.png" sizes="194x194">
+<link rel="icon" type="image/png" href="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/favicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/favicon/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/favicon/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/favicon/manifest.json">
+<link rel="mask-icon" href="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/favicon/safari-pinned-tab.svg">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/favicon/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<title>รู้จัก Bootstrap Layout - Grid - Jir4yu.me</title>
+<!-- This site is optimized with the Yoast SEO plugin v4.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://www.jir4yu.me/2014/%e0%b8%a3%e0%b8%b9%e0%b9%89%e0%b8%88%e0%b8%b1%e0%b8%81-bootstrap-layout-grid/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="รู้จัก Bootstrap Layout - Grid - Jir4yu.me" />
+<meta property="og:description" content="Bootstrap เพื่อนรัก &#8211; Grid จริงๆ แล้วถ้าให้พูดถึง Bootstrap.." />
+<meta property="og:url" content="https://www.jir4yu.me/2014/%e0%b8%a3%e0%b8%b9%e0%b9%89%e0%b8%88%e0%b8%b1%e0%b8%81-bootstrap-layout-grid/" />
+<meta property="og:site_name" content="Jir4yu.me" />
+<meta property="article:publisher" content="http://www.facebook.com/jir4yu" />
+<meta property="article:tag" content="Bootstrap" />
+<meta property="article:section" content="Web dev." />
+<meta property="article:published_time" content="2014-04-14T13:24:56+00:00" />
+<meta property="article:modified_time" content="2014-07-17T12:09:55+00:00" />
+<meta property="og:updated_time" content="2014-07-17T12:09:55+00:00" />
+<meta property="og:image" content="https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-13.17.57.png" />
+<meta property="og:image:width" content="1821" />
+<meta property="og:image:height" content="696" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Bootstrap เพื่อนรัก &#8211; Grid จริงๆ แล้วถ้าให้พูดถึง Bootstrap.." />
+<meta name="twitter:title" content="รู้จัก Bootstrap Layout - Grid - Jir4yu.me" />
+<meta name="twitter:site" content="@jir4yu" />
+<meta name="twitter:image" content="https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-13.17.57.png" />
+<meta name="twitter:creator" content="@jir4yu" />
+<!-- / Yoast SEO plugin. -->
+<link rel='dns-prefetch' href='//www.jir4yu.me' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Jir4yu.me &raquo; Feed" href="https://www.jir4yu.me/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Jir4yu.me &raquo; Comments Feed" href="https://www.jir4yu.me/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Jir4yu.me &raquo; รู้จัก Bootstrap Layout &#8211; Grid Comments Feed" href="https://www.jir4yu.me/2014/%e0%b8%a3%e0%b8%b9%e0%b9%89%e0%b8%88%e0%b8%b1%e0%b8%81-bootstrap-layout-grid/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.jir4yu.me\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.2"}};
+!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 .07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wpt-twitter-feed-css'  href='https://www.jir4yu.me/wp-content/plugins/wp-to-twitter/css/twitter-feed.css?ver=4.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='whitetail-core-css'  href='https://www.jir4yu.me/wp-content/themes/WhiteTail/style.css?ver=1.9.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.jir4yu.me/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.jir4yu.me/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='https://www.jir4yu.me/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.jir4yu.me/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.jir4yu.me/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.7.2" />
+<link rel='shortlink' href='https://www.jir4yu.me/?p=3929' />
+<link rel="alternate" type="application/json+oembed" href="https://www.jir4yu.me/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.jir4yu.me%2F2014%2F%25e0%25b8%25a3%25e0%25b8%25b9%25e0%25b9%2589%25e0%25b8%2588%25e0%25b8%25b1%25e0%25b8%2581-bootstrap-layout-grid%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.jir4yu.me/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.jir4yu.me%2F2014%2F%25e0%25b8%25a3%25e0%25b8%25b9%25e0%25b9%2589%25e0%25b8%2588%25e0%25b8%25b1%25e0%25b8%2581-bootstrap-layout-grid%2F&#038;format=xml" />
+<style type="text/css">.broken_link, a.broken_link {
+text-decoration: line-through;
+}</style>
+<!-- BEGIN GADWP v4.9.6 Universal Tracking - https://deconf.com/google-analytics-dashboard-wordpress/ -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-37860514-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- END GADWP Universal Tracking -->
+</head>
+<body class="post-template-default single single-post postid-3929 single-format-standard">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5GLJLC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GLJLC');</script>
+<!-- End Google Tag Manager -->	<div class="wrapper">
+<header class="header">
+<div class="container">
+<div class="clearfix mxn2">
+<div class="sm-col sm-col-12 px2">
+<h2 class='site-title'>Jir4yu.me</h2>						<h2 class="site-tagline">ความรู้สึก.. ที่ตอนไหนๆก็(ไม่)เหมือนกัน</h2>
+<nav class="site-navigation">
+<ul class="list-reset clearfix"><li id="menu-item-4130" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-4130"><a href="http://www.jir4yu.me/">Home</a></li>
+<li id="menu-item-4131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><a href="https://www.jir4yu.me/%e0%b8%ad%e0%b9%88%e0%b8%b2%e0%b8%99%e0%b8%89%e0%b8%b1%e0%b8%99/">Readme</a></li>
+<li id="menu-item-5227" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5227"><a href="#">Categories</a>
+<ul class="sub-menu">
+<li id="menu-item-5228" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5228"><a href="https://www.jir4yu.me/category/lifestyle/">Life</a></li>
+<li id="menu-item-5233" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5233"><a href="https://www.jir4yu.me/category/quote-2/">Quote</a></li>
+<li id="menu-item-5229" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-5229"><a href="https://www.jir4yu.me/category/web-development-tuts/">Web dev.</a></li>
+<li id="menu-item-5230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5230"><a href="https://www.jir4yu.me/category/recommend/">Recommended</a></li>
+<li id="menu-item-5231" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5231"><a href="https://www.jir4yu.me/category/gadget/">Gadget</a></li>
+<li id="menu-item-5232" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5232"><a href="https://www.jir4yu.me/category/wordpress-tuts/">WordPress</a></li>
+</ul>
+</li>
+<li id="menu-item-5059" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5059"><a href="https://github.com/jir4yu/resume/blob/master/resume.md">Resume</a></li>
+<li id="menu-item-4142" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4142"><a href="http://www.jindatheme.com">รับเขียนเว็บไซต์</a></li>
+</ul>						</nav>
+</div>
+</div>
+</div>
+</header>
+<main class="main">
+<div class="container">
+<div class="clearfix mxn2">
+<article itemscope itemtype="http://schema.org/BlogPosting" class="sm-col sm-col-12 px2 post-3929 post type-post status-publish format-standard has-post-thumbnail hentry category-web-development-tuts tag-bootstrap">
+<h1 class="entry-title" itemprop="name">รู้จัก Bootstrap Layout &#8211; Grid</h1>
+<div class="entry-content" itemprop="articleBody">
+<h3>Bootstrap เพื่อนรัก &#8211; Grid</h3>
+<p><span class="dropcap">จ</span>ริงๆ แล้วถ้าให้พูดถึง <strong>Bootstrap</strong> ก็คงจะขาดเรื่องของ Layout หรือ Grid System ไปไม่ได้เลย ในความเป็นจริงเรื่องนี้ควรที่จะทำความเข้าใจก่อนใช้งาน <strong>Bootstrap</strong> เสียด้วยซ้ำ บทความนี้จะพูดถึงเรื่องของ Grid System และ Box model ของ CSS ด้วย ซึ่งจะทำให้ผู้อ่านเข้าใจ และ ปรับนำมาใช้กับงานได้อย่างง่ายขึ้น ทั้งนี้เองผู้เขียนแนะนำให้เปิดคู่มือของ <strong>Bootstrap</strong> ดูควบคู่ไปด้วยเช่นกันที่ <a title="Grid System" href="http://getbootstrap.com/css/#grid" target="_blank">http://getbootstrap.com/css/#grid</a> บทความนี้เราจะพูดถึง Grid System ของ <strong>Bootstrap</strong> เวอร์ชั่น 3 ซึ่งจะแตกต่างกับเวอร์ชั่น 2 อยู่พอสมควร ถ้าจะถามผู้เขียนว่าทั้งสองเวอร์ชั่นมีความแตกต่างกันเยอะหรือเปล่า ผู้เขียนก็คงจะตอบว่าเวอร์ชั่น 3 นั้นถูกออกแบบมาได้ดีกว่า ยืดหยุ่นกว่า สามารถใช้งานกับอุปกรณ์ได้อย่างหลากหลาย และ ควบคุมการแสดงผลได้ง่ายกว่า ผู้เขียนจึงแนะนำให้ใช้ของใหม่แทนของเก่า คำถามหลักต่อไปคือ</p>
+<h4>Grid System คืออะไร ?</h4>
+<p>ถ้าพูดกันแบบบ้านๆ ทั่วไปเราก็คงจะบอกว่าเป็น Layout ที่คอยควบคุมวัตถุต่างๆ บนหน้าเว็บไซต์ให้แสดงผลได้อย่างถูกต้องตามหลัก box layout ซึ่งจะส่งผลดีต่อการเขียนหนึ่งหน้าเว็บไซต์ แต่สามารถใช้ร่วมกับอุปกรณ์ทุกขนาดหน้าจอ Grid system ของ <strong>Bootstrap</strong> เอง แบ่งออกเป็น 12 คอลัมน์ ถ้าให้เห็นภาพง่ายขึ้นก็น่าจะต้องบอกว่า เหมือนกับตาราง 1 แถว มี 12 คอลัมน์ประมาณนั้น ดังภาพด้านล่าง</p>
+<figure id="attachment_3930" style="width: 895px" class="wp-caption alignnone"><img class="size-full wp-image-3930" src="http://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-11.08.33.png" alt="Bootstrap Grid System" width="895" height="69" srcset="https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-11.08.33.png 895w, https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-11.08.33-600x46.png 600w" sizes="(max-width: 895px) 100vw, 895px" /><figcaption class="wp-caption-text">รูปภาพจาก Bootstrap &#8211; แสดงให้เห็นว่า 1 row = 12 cols</figcaption></figure>
+<p>ซึ่งหน่วยที่เป็น 12 นี้ เราสามารถเฉลี่ยแต่ละส่วนได้ตามความต้องการ อย่างเช่น</p>
+<figure id="attachment_3931" style="width: 898px" class="wp-caption alignnone"><img class="size-full wp-image-3931" src="http://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-11.10.55.png" alt="Bootstrap Grid System" width="898" height="173" srcset="https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-11.10.55.png 898w, https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-11.10.55-600x116.png 600w" sizes="(max-width: 898px) 100vw, 898px" /><figcaption class="wp-caption-text">รูปตัวอย่างการเฉลี่ยแต่ละส่วนให้ไม่เกิน 12 cols</figcaption></figure>
+<p>ผู้อ่านน่าจะพอเห็นภาพกันบ้างแล้ว ซึ่งเวลาเขียนโค้ดนี้เอง เราจะต้องเริ่มต้นด้วย class ที่ชื่อว่า &#8220;<em>row</em>&#8221; และสร้าง element ภายในด้วย prefix class เริ่มต้นว่า &#8220;<em>col-หน่วยหน้าจอ-เลขคอลัมน์</em>&#8221; สิ่งที่เราต้องระบุเพิ่มเติมลงไปก็มี 2 ค่าด้วยกันคือ หน่วยหน้าจอ และ เลขคอลัมน์</p>
+<pre class="html">&lt;div class="row"&gt;
+    &lt;div class="col-sm-6"&gt; Columns A &lt;/div&gt;
+    &lt;div class="col-sm-6"&gt; Columns B &lt;/div&gt;
+&lt;/div&gt;</pre>
+<h4>หน่วยหน้าจอ &#8211; เลขคอลัมน์ ต้องระบุอะไร ?</h4>
+<p>หน่วยหน้าจอใน <strong>Bootstrap</strong> เวอร์ชั่นใหม่นี้มีทั้งหมด 4 แบบให้เลือกเรียกใช้ได้ตามสะดวก ซึ่งแต่ละหน่วยก็ควบคุมการแสดงผลตามขนาดหน้าจอ(หน่วยเป็น pixel) ตามที่ Bootstrap กำหนดไว้ในตอนแรก ซึ่งดูได้จากรูปภาพของเว็บไซต์ <strong>Bootstrap</strong> เอง หรือภาพด้านล่างนี้</p>
+<figure id="attachment_3934" style="width: 857px" class="wp-caption alignnone"><img class="size-full wp-image-3934" src="http://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-11.21.22.png" alt="Grid Option - Bootstrap" width="857" height="225" srcset="https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-11.21.22.png 857w, https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-11.21.22-600x158.png 600w" sizes="(max-width: 857px) 100vw, 857px" /><figcaption class="wp-caption-text">แสดงข้อมูลการเรียกใช้ในแต่ละหน่วยหน้าจอ</figcaption></figure>
+<p><span style="text-decoration: underline;">สรุปจากภาพด้านบนง่ายๆดังนี้</span></p>
+<ul>
+<li><span style="color: #808000;">XS</span> :: ใช้กับหน้าจอขนาดเล็กกว่า Ipad แนวตั้งลงมา (หน้าจอสมาร์ทโฟนต่างๆ)</li>
+<li><span style="color: #ff00ff;">SM</span> :: ขนาดหน้าจอตั้งแต่ Ipad แนวตั้ง</li>
+<li><span style="color: #ff6600;">MD</span> :: ขนาดความกว้างต่ำสุดที่หน้าจอ Ipad แนวนอน</li>
+<li><span style="color: #0000ff;">LG</span> :: หน้าจอที่กว้างกว่า 1200 pixels ขึ้นไป หรือให้เหมาะสมกับขนาดหน้าจอโน้ตบุคมาตราฐาน</li>
+</ul>
+<p>ส่วนหน่วยคอลัมน์นั้น เราสามารถระบุได้ตามใจชอบว่าจะใช้เท่าไหร่ก็ได้ตั้งแต่ 1-12 หรือ เฉลี่ยแต่ละวัตถุให้อยู่ในแถวเดียวกันโดยรวมแล้วไม่เกิน 12 หน่วย ซึ่งเวลาเขียนโค้ดเราสามารถกำหนดหน่วยหน้าจอในขนาดต่างๆ ให้แตกต่างกันออกไปตามการแสดงผลได้ด้วย ยกตัวอย่างเช่น</p>
+<pre class="html">&lt;div class="row"&gt;
+    &lt;div class="col-xs-6 col-sm-4 col-md-5 col-lg-7"&gt;Column A&lt;/div&gt;
+    &lt;div class="col-xs-6 col-sm-8 col-md-7 col-lg-5"&gt;Column B&lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>ซึ่งบางครั้งเราอาจจะไม่ต้องกำหนดหน่วยหน้าจอ</p>
+<pre class="html">&lt;div class="row"&gt;
+    &lt;div class="col-md-9 col-lg-7"&gt;Column A&lt;/div&gt;
+    &lt;div class="col-md-3 col-lg-5"&gt;Column B&lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>ถ้าเป็นอย่างในตัวอย่างด้านบน <strong>Bootstrap</strong> จะแสดงผลเป็น 2 คอลัมน์คือ A อยู่ทางด้านซ้ายที่ความกว้าง 9 คอลัมน์ และ คอลัมน์ B อยู่ด้านขวาที่ความกว้าง 3 คอลัมน์(สำหรับขนาดหน้าจอ iPad แนวนอน) ในทิศทางเดียวกันเมื่อผู้ใช้ไปเปิดเว็บไซต์ในหน้าจอที่กว้างกว่า 1200px หรือหน้าจอโน้ตบุคมาตราฐาน(1366&#215;768) ก็จะได้คอลัมน์ A ที่มีความกว้างเหลือ 7 คอลัมน์, คอลัมน์ B กว้างขึ้นเป็น 5 คอลัมน์ <span style="text-decoration: underline;">ส่วนขนาดหน้าจอที่ไม่ได้กำหนดคือตั้งแต่ SM และ XS จะใช้ความกว้าง 12 คอลัมน์ไปโดยปริยาย</span></p>
+<h4>ครอบด้วย Container</h4>
+<p>ที่ผ่านมาผู้อ่านใช้ row ในการครอบ col ต่างๆ แต่พอหากเรานำไปใช้ในการเขียนเว็บไซต์จริงๆ แล้ว จะเห็นว่าความกว้างนั้นไม่ได้ถูกกำหนดเอาไว้ ซึ่งไม่เป็นผลดีหากผู้ใช้นำไปเปิดในอุปกรณ์ที่มีหน้าจอขนาดกว้าง เราจึงต้องครอบเหนือจาก row ด้วย class ที่ชื่อว่า <em>container</em> ดังตัวอย่าง</p>
+<pre class="html">&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-9 col-lg-7"&gt;Column A&lt;/div&gt;
+        &lt;div class="col-md-3 col-lg-5"&gt;Column B&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>ซึ่งข้อดีของ <em>container</em> เองคือช่วยควบคุมการแสดงผลระหว่างอุปกรณ์ได้โดยที่เราไม่จำเป็นต้องสร้าง class อื่นมาคอยจัดการวัตถุข้างในเอง เพราะ <em>container</em> นั้นถูกเขียนมาให้ยืดหยุ่นกับขนาดหน้าจอแต่ละแบบอยู่แล้ว</p>
+<figure id="attachment_3937" style="width: 1920px" class="wp-caption alignnone"><img class="size-full wp-image-3937" src="http://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-11.46.24.png" alt="Bootstrap Container" width="1920" height="921" srcset="https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-11.46.24.png 1920w, https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-11.46.24-600x288.png 600w, https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-11.46.24-1024x491.png 1024w" sizes="(max-width: 1920px) 100vw, 1920px" /><figcaption class="wp-caption-text">รูปภาพด้านบนแสดงให้เห็นตอนที่ยังไม่ใช้ container</figcaption></figure>
+<figure id="attachment_3938" style="width: 1743px" class="wp-caption alignnone"><img class="size-full wp-image-3938" src="http://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-11.47.10.png" alt="Bootstrap Container" width="1743" height="986" srcset="https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-11.47.10.png 1743w, https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-11.47.10-600x339.png 600w, https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-11.47.10-1024x579.png 1024w" sizes="(max-width: 1743px) 100vw, 1743px" /><figcaption class="wp-caption-text">เมื่อใช้ Container จะช่วยควบคุมให้อยู่ใน box model</figcaption></figure>
+<p>ที่ผ่านมาอาจจะทำให้ผู้อ่านเข้าใจเรื่องของ Grid Layout กันมากขึ้นไม่มากก็น้อย ซึ่งต่อไปผู้เขียนจะยกตัวอย่างการใช้งาน Grid System ในเว็บไซต์รูปแบบต่างๆ และการปรับแต่ง CSS หรือการ override css ของ <strong>Bootstrap</strong> ไปในบทความที่แล้ว(<a title="ปรับแต่ง Bootstrap ด้วย CSS" href="http://www.jir4yu.me/2014/%E0%B8%9B%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B9%81%E0%B8%95%E0%B9%88%E0%B8%87-bootstrap-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-css/" target="_blank">ปรับแต่ง Bootstrap ด้วย CSS</a>) มาช่วยในเรื่องของการแสดงผลด้วย</p>
+<h4>ตัวอย่างการเขียน Box layout, Grid System</h4>
+<p>Header แบบเดิมๆ ที่เราคุ้นเคยกันดี คือมี Logo อยู่ด้านซ้าย เมนูแนวนอนอยู่ด้านขวา ตัวอย่างดังเช่นเว็บไซต์ด้านล่าง เมื่อเขียนด้วย <strong>Bootstrap</strong> นั้นจะทำได้ง่ายมาก</p>
+<figure id="attachment_3942" style="width: 1075px" class="wp-caption alignnone"><img class="size-full wp-image-3942" src="http://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-12.27.55.png" alt="Bootstrap Example" width="1075" height="101" srcset="https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-12.27.55.png 1075w, https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-12.27.55-600x56.png 600w, https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-12.27.55-1024x96.png 1024w" sizes="(max-width: 1075px) 100vw, 1075px" /><figcaption class="wp-caption-text">http://www.thinslices.com/</figcaption></figure>
+<p>เริ่มแรกให้สร้างไฟล์ .html เปล่า แล้วลิงค์ bootstrap กับ jquery เข้ามาให้เรียบร้อย</p>
+<pre class="html">&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Bootstrap Demo&lt;/title&gt;
+&lt;link rel="stylesheet" href="css/bootstrap.min.css" /&gt;
+&lt;link rel="stylesheet" href="css/global.css" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script src="js/jquery-1.11.0.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<p>ถ้าคัดลอกโค้ดไปก็อย่าลืมเปลี่ยน path ของไฟล์ที่ลิงค์ css, js ก่อนนะครับ จากนั้นเราก็อาจจะแบ่ง row ออกเป็น 2 คอลัมน์ตามภาพด้านบน โดยเฉลี่ยบล็อคซ้ายเป็นส่วนของ logo, ด้านขวาเป็นของ menu ผู้อ่านสามารถเฉลี่ยตัวเลขได้ตามความเหมาะสม อย่างโค้ดของผู้เขียนแบ่งซ้ายไว้ 4 สำหรับหน่วย SM เป็น 5 สำหรับ MD, แบ่งขวาไว้ 8 สำหรับ SM แบ่ง 7 สำหรับ MD</p>
+<pre class="html">
+&lt;div class="container"&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-sm-4 col-md-5"&gt;
+&lt;img src="http://www.placehold.it/300x68" class="img-responsive"&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-8 col-md-7 text-right"&gt;
+&lt;ul class="list-inline"&gt;
+&lt;li class="active"&gt;&lt;a href="http://www.jir4yu.me"&gt;&lt;/a&gt;HOME&lt;/li&gt;
+&lt;li&gt;About&lt;/li&gt;
+&lt;li&gt;Service&lt;/li&gt;
+&lt;li&gt;Project&lt;/li&gt;
+&lt;li&gt;Contact&lt;/li&gt;
+&lt;li&gt;Our Map&lt;/li&gt;
+&lt;li&gt;&lt;a href="javascript:void(0)" class="btn btn-success btn-sm"&gt;Hello&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt; 
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</pre>
+<figure id="attachment_3946" style="width: 1172px" class="wp-caption alignnone"><img class="size-full wp-image-3946" src="http://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-12.41.23.png" alt="Bootstrap demo" width="1172" height="95" srcset="https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-12.41.23.png 1172w, https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-12.41.23-600x49.png 600w, https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-12.41.23-1024x83.png 1024w" sizes="(max-width: 1172px) 100vw, 1172px" /><figcaption class="wp-caption-text">หลังจากเขียน html ไฟล์ดังกล่าว</figcaption></figure>
+<p>ให้เราเขียน CSS เพิ่มเข้ามาเพื่อช่วยให้แสดงผลสวยงามขึ้น จะเขียนที่ไฟล์ css แล้วลิงค์เข้ามาใน html หรือในส่วน head ก็ได้ครับ แต่เพื่อความสะดวกรวดเร็วผมจะเขียนแบบหลัง แต่ถ้าให้แนะนำ, ผมแนะนำให้ลิงค์เข้ามาจะดู clean กว่า</p>
+<pre class="css">.container{ max-width: 980px; }
+#site-logo{ padding: 1em 0; }
+#site-nav{ padding: 2.5em 0 1em; }
+#site-nav&gt;li{ font-size: 1.2em; font-weight: 200; }
+.btn-success{ background-color: #A3CA1C; border-color: transparent;}</pre>
+<p>เราสามารถกำหนดความกว้างให้กับ <em>container</em> ใหม่ได้ด้วยการ override css เข้าไปดังบรรทัดแรก ที่ผู้เขียนต้องกำหนดให้เป็น 980px เพราะอยากให้บีบตัวเว็บไซต์ที่แสดงผลเข้ามาให้เหมือนกับรูปของเว็บไซต์ที่เราหยิบมาอ้างอิง ซึ่งจะเขียนหรือไม่เขียนก็ได้แล้วแต่กำหนดครับ ตัวอย่างโค้ดทั้งหมดของไฟล์ header นี้คือ</p>
+<pre class="html">&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Bootstrap Demo&lt;/title&gt;
+&lt;link rel="stylesheet" href="css/bootstrap.min.css" /&gt;
+&lt;style&gt;
+.container{ max-width: 980px; }
+#site-logo{ padding: 1em 0; }
+#site-nav{ padding: 2.5em 0 1em; }
+#site-nav&gt;li{ font-size: 1.2em; font-weight: 200; }
+.btn-success{ background-color: #A3CA1C; border-color: transparent;}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="container"&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-sm-4 col-md-5"&gt;
+&lt;img src="http://www.placehold.it/300x68" class="img-responsive" id="site-logo"&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-8 col-md-7 text-right"&gt;
+&lt;ul class="list-inline" id="site-nav"&gt;
+&lt;li class="active"&gt;&lt;a href="http://www.jir4yu.me"&gt;&lt;/a&gt;HOME&lt;/li&gt;
+&lt;li&gt;About&lt;/li&gt;
+&lt;li&gt;Service&lt;/li&gt;
+&lt;li&gt;Project&lt;/li&gt;
+&lt;li&gt;Contact&lt;/li&gt;
+&lt;li&gt;Our Map&lt;/li&gt;
+&lt;li&gt;&lt;a href="javascript:void(0)" class="btn btn-success btn-sm"&gt;Hello&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt; 
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script src="js/jquery-1.11.0.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<p>จะแสดงผลใน web browser ได้ประมาณนี้ครับ <img class="alignnone size-full wp-image-3948" src="http://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-12.51.49.png" alt="Bootstrap Demo" width="1011" height="98" srcset="https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-12.51.49.png 1011w, https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-12.51.49-600x58.png 600w" sizes="(max-width: 1011px) 100vw, 1011px" /> ทีนี้มาลองดูตัวอย่างรูปแบบเว็บไซต์ต่อไปกันดีกว่า</p>
+<figure id="attachment_3950" style="width: 1559px" class="wp-caption alignnone"><img class="size-full wp-image-3950" src="http://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-12.54.09.png" alt="Bootstrap Layout" width="1559" height="818" srcset="https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-12.54.09.png 1559w, https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-12.54.09-600x315.png 600w, https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-12.54.09-1024x537.png 1024w" sizes="(max-width: 1559px) 100vw, 1559px" /><figcaption class="wp-caption-text">https://www.robinhood.com/</figcaption></figure>
+<p>อย่างเว็บไซต์นี้จะใช้ Header ที่เป็นทั้ง intro และ form subscribe ไปในตัว โดยใช้รูปหรือวิดีโอเป็น background พื้นหลัง ซึ่งเขียน html ได้ประมาณนี้</p>
+<pre class="html">&lt;div id="header"&gt;
+&lt;div class="container"&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-sm-12 text-center" id="site-intro"&gt;
+&lt;img src="http://www.placehold.it/120x120" class="img-responsive" id="site-icon"&gt;
+&lt;h1&gt;&lt;span class="site-name"&gt;Jir4yu.me&lt;/span&gt; is a Thailand Original Blogger, Freelancer and Poet.&lt;br/&gt; Subscribe my great post here&lt;/h1&gt;
+&lt;form role="form" class="form-inline"&gt;
+&lt;input type="text" class="form-control input-lg" id="subscribe-tb"&gt;
+&lt;button class="btn btn-success btn-lg" id="subscribe-button"&gt;Subscribe&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</pre>
+<p><img class="alignnone size-full wp-image-3951" src="http://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-13.03.12.png" alt="Bootstrap Demo" width="1171" height="340" srcset="https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-13.03.12.png 1171w, https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-13.03.12-600x174.png 600w, https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-13.03.12-1024x297.png 1024w" sizes="(max-width: 1171px) 100vw, 1171px" /> หลังจากนั้นก็มาเขียน CSS ช่วยปรับการแสดงผลกันนิดหน่อย</p>
+<pre class="css">#header{ height: 700px; background: #233; }
+#site-icon{ margin: auto; }
+#site-intro { padding: 150px 0 0}
+#site-intro h1{ color: #eee; font-weight: 200; line-height: 1.6em; padding: 0.5em 0; }
+#site-intro .site-name{ color: #06BA8F; }
+#subscribe-tb{ width: 35%; }
+#subscribe-button {width: 25%; }
+.btn-success{ background-color: #06BA8F; }</pre>
+<p>ตัวอย่างโค้ดทั้งไฟล์</p>
+<pre class="html">&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Bootstrap Demo&lt;/title&gt;
+&lt;link rel="stylesheet" href="css/bootstrap.min.css" /&gt;
+&lt;style&gt;
+#header{ height: 700px; background: #233; }
+#site-icon{ margin: auto; }
+#site-intro { padding: 150px 0 0}
+#site-intro h1{ color: #eee; font-weight: 200; line-height: 1.6em; padding: 0.5em 0; }
+#site-intro .site-name{ color: #06BA8F; }
+#subscribe-tb{ width: 35%; }
+#subscribe-button {width: 25%; }
+.btn-success{ background-color: #06BA8F; }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id="header"&gt;
+&lt;div class="container"&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-sm-12 text-center" id="site-intro"&gt;
+&lt;img src="http://www.placehold.it/120x120" class="img-responsive" id="site-icon"&gt;
+&lt;h1&gt;&lt;span class="site-name"&gt;Jir4yu.me&lt;/span&gt; is a Thailand Original Blogger, Freelancer and Poet.&lt;br/&gt; Subscribe my great post here&lt;/h1&gt;
+&lt;form role="form" class="form-inline"&gt;
+&lt;input type="text" class="form-control input-lg" id="subscribe-tb"&gt;
+&lt;button class="btn btn-success btn-lg" id="subscribe-button"&gt;Subscribe&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script src="js/jquery-1.11.0.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<p>เมื่อนำไปแสดงผลใน web browser จะได้ดังภาพด้านล่าง ซึ่ง Background สามารถเปลี่ยนเป็นรูป หรือ video โดยใช้ html5 ก็ตามแต่สะดวกได้เลย <img class="alignnone size-full wp-image-3952" src="http://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-13.17.57.png" alt="Bootstrap Demo" width="1821" height="696" srcset="https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-13.17.57.png 1821w, https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-13.17.57-600x229.png 600w, https://www.jir4yu.me/wp-content/uploads/2014/04/Screen-Shot-2557-04-14-at-13.17.57-1024x391.png 1024w" sizes="(max-width: 1821px) 100vw, 1821px" /> สำหรับ layout ของ <strong>bootstrap</strong> เวอร์ชั่น 3 นี้เอง ถือว่าเรียกใช้งานได้ง่าย และ ควบคุมการแสดงผลได้ดีกว่าเวอร์ชั่น 2 ผู้เขียนแนะนำว่าหลังจากเขียนไฟล์ตัวอย่างดังกล่าวแล้ว ควรจะทดสอบในอุปกรณ์ที่หน้าจอเล็กกว่าจอคอมพ์หรือโน้ตบุคด้วย ถ้าการแสดงผลยังไม่สมบูรณ์ก็จะต้องใช้ media query ในการ override ทับกับของ <strong>Bootstrap</strong> เองลงไปด้วย</p>
+<div class="entry-meta">
+<time class="entry-date"><span class="icon icon-clock"></span> เขียนเมื่อ: <span class="time" itemprop="datePublished" itemprop="dateCreated">14 April, 2014</span></time>
+<span class="entry-categories"><span class="icon icon-archive"></icon> ในหมวดหมู่: <a href="https://www.jir4yu.me/category/web-development-tuts/" rel="category tag">Web dev.</a> </span>
+<span class="entry-tags"><span class="icon icon-tag"></icon> คำค้น: <a href="https://www.jir4yu.me/tag/bootstrap/" rel="tag">Bootstrap</a></span>
+</div>			</div>
+<div class="clearfix author-block">
+<img alt='Jirayu L' src='https://secure.gravatar.com/avatar/78a4864d5f1e153751f2eb1315c550f7?s=80&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/78a4864d5f1e153751f2eb1315c550f7?s=160&amp;d=mm&amp;r=g 2x' class='avatar avatar-80 photo author-image' height='80' width='80' />	<div class="author-content">
+<h3 class="author-title" itemprop="author">Jirayu L</h3>
+<p class="author-bio" >ถ้าไม่รู้จักกัน บางทีคุณอาจจะไม่เข้าใจกับสิ่งที่ผมทำ.. กลับกัน ถ้าคุณรู้จักผมดี คุณจะไม่ต้องเอ่ยปากถามเลยว่าทำไม</p>
+</div>
+</div>		</article>
+</div>
+<div class="single-pagination">
+<div class="clearfix mxn2">
+<div class="sm-col sm-col-6 px1 left">
+<div class="clearfix pagination-content-block">
+<a href="https://www.jir4yu.me/2014/nike-fuelband-se/"><span class="post-pagination-icon icon-arrow-left"></span></a>
+<strong><a href="https://www.jir4yu.me/2014/nike-fuelband-se/" rel="prev">Nike FuelBand SE</a></strong>			</div>
+</div>
+<div class="sm-col sm-col-6 px1 right">
+<div class="clearfix pagination-content-block">
+<strong><a href="https://www.jir4yu.me/2014/%e0%b9%80%e0%b8%aa%e0%b8%b5%e0%b9%88%e0%b8%a2%e0%b8%87/" rel="next">เสี่ยง</a></strong>					<a href="https://www.jir4yu.me/2014/%e0%b9%80%e0%b8%aa%e0%b8%b5%e0%b9%88%e0%b8%a2%e0%b8%87/"><span class="post-pagination-icon icon-arrow-right"></span></a>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix mxn2">
+<div class="sm-col sm-col-12 px2">
+<div id="comments" class="comments-area">
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">แสดงความคิดเห็นของคุณที่นี่ <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2014/%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%88%E0%B8%B1%E0%B8%81-bootstrap-layout-grid/#respond" style="display:none;">ยกเลิกการตอบ</a></small></h3>			<form action="https://www.jir4yu.me/wp-comments-post.php" method="post" id="commentform" class="clearfix mxn2">
+<div class="sm-col sm-col-12"><label for="comment" class="w-label"><span class="icon-speech-bubble"></span> ระบุความคิดเห็น  <span class="required">*</span></label><textarea id="comment" class="w-textarea" name="comment" cols="45" rows="8" aria-required="true"></textarea></div><div class="clearfix"><div class="sm-col sm-col-6"><label class="w-label" for="author">ชื่อของคุณ <span class="required">*</span></label><input class="w-tb first" id="author" name="author" type="text" value="" size="30" /></div>
+<div class="sm-col sm-col-6"><label class="w-label" for="email">ระบุอีเมล์ <span class="required">*</span></label> <input class="w-tb" id="email" name="email" type="text" value="" size="30" /></div>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit w-btn comment-submit-button" value="ส่งความเห็น" /> <input type='hidden' name='comment_post_ID' value='3929' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="cb0e282f15" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="93"/></p>			</form>
+</div><!-- #respond -->
+</div>	</div>
+</div>
+</div>
+</main>
+		<footer class="footer">
+<div class="container">
+<div class="clearfix mxn2">
+<div class="sm-col sm-col-12 px2 center">
+<ul class="list-reset social-list">
+<li><a href="http://www.facebook.com/jir4yu" target="_blank" title="My Facebook"><img src="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/icons/facebook.png" class="social-image" alt="Facebook"></a></li>
+<li><a href="http://www.twitter.com/jir4yu" target="_blank" title="My Twitter"><img src="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/icons/twitter.png" class="social-image" alt="Twitter"></a></li>
+<li><a href="https://plus.google.com/+JirayuL" target="_blank" title="My Google Plus"><img src="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/icons/google_plus.png" class="social-image" alt="Google Plus"></a></li>
+<li><a href="http://www.instagram.com/jir4yu" target="_blank" title="My Instagram"><img src="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/icons/instagram.png" class="social-image" alt="Instagram"></a></li>
+<li><a href="https://th.linkedin.com/in/jir4yu" target="_blank" title="My Linkedin"><img src="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/icons/linkedin.png" class="social-image" alt="Linkedin"></a></li>
+<li><a href="https://github.com/jir4yu" target="_blank" title="My Github"><img src="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/icons/github.png" class="social-image" alt="Github"></a></li>
+<li><a href="https://500px.com/jir4yu" target="_blank" title="My 500px"><img src="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/icons/500px.png" class="social-image" alt="500px"></a></li>
+</ul>
+<p class="footer-text vcard">
+บทความทั้งหมดใน <strong>Jir4yu.me</strong> ถูกเขียนขึ้นโดย <a rel="author" href="https://plus.google.com/114178088498011147130?rel=author" target="_blank" title="Jirayu Limjinda" class="fn">Jirayu Limjinda</a> ภายใต้สัญญา <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" title="Creative Commons" target="_blank">CC BY-NC-ND 4.0</a>
+</p>
+<p class="credit-text"><a href="https://github.com/JindaTheme/WhiteTail" target="_blank" title="WhiteTail WordPress Theme">WhiteTail</a> is an opensource WordPress Theme by <a href="http://www.jindatheme.com" target="_blank" title="JindaTheme">JindaTheme</a></p>					</div>
+</div>
+</div>
+</footer>
+</div>
+<div id="search-container" class="search-bar">
+<form role="search" method="get" class="search-form" action="https://www.jir4yu.me/">
+<input type="search" placeholder="ค้นหา.." class="search-field w-tb" value="" name="s" />
+<a href="javascript:closeSearch()" class="close-search"><span class="icon-cross"></span></a>
+<input type="submit" value="ค้นหา" class="search-submit w-btn">
+</form>
+</div>
+<div class="preloader-block">
+<div class="preloader-content">
+<img src="https://www.jir4yu.me/wp-content/themes/WhiteTail/img/loading.gif" class="preload-icon" alt="loading, please wait.." />
+<p class="preload-text">loading, please wait..</p>
+</div>
+</div>
+<div class="overlay-background"></div>
+<script type='text/javascript' src='https://www.jir4yu.me/wp-content/plugins/akismet/_inc/form.js?ver=3.2'></script>
+<script type='text/javascript' src='https://www.jir4yu.me/wp-content/themes/WhiteTail/js/lib/client.min.js?ver=2.2.0'></script>
+<script type='text/javascript' src='https://www.jir4yu.me/wp-includes/js/comment-reply.min.js?ver=4.7.2'></script>
+<script type='text/javascript' src='https://www.jir4yu.me/wp-includes/js/wp-embed.min.js?ver=4.7.2'></script>
+</body>
+</html><!-- WP Fastest Cache file was created in 0.079332113265991 seconds, on 07-02-17 14:09:20 --><!-- need to refresh to see cached version -->

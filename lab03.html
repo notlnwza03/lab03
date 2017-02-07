@@ -1,0 +1,198 @@
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: lightpink;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: ghostwhite;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-3 sidenav">
+                <h4>Joker 's Blog</h4>
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="http://angsila.cs.buu.ac.th/~58160170/887371/lab03/home.html">Home</a></li>
+                    <li><a href="http://angsila.cs.buu.ac.th/~58160170/887371/lab03/lab03.html">Grid in bootstrap</a></li>
+                    <li><a href="#section3">Form</a></li>
+                </ul><br>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Blog..">
+                    <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-sm-9">
+                <hr>
+                <h2>Grids in Bootstrap</h2>
+                <br>
+                <p>รู้จัก Bootstrap Layout – Grid Bootstrap เพื่อนรัก – Grid จริงๆ แล้วถ้าให้พูดถึง Bootstrap ก็คงจะขาดเรื่องของ
+                    Layout หรือ Grid System ไปไม่ได้เลย ในความเป็นจริงเรื่องนี้ควรที่จะทำความเข้าใจก่อนใช้งาน Bootstrap เสียด้วยซ้ำ
+                    บทความนี้จะพูดถึงเรื่องของ Grid System และ Box model ของ CSS ด้วย ซึ่งจะทำให้ผู้อ่านเข้าใจ และ ปรับนำมาใช้กับงานได้อย่างง่ายขึ้น
+                    ทั้งนี้เองผู้เขียนแนะนำให้เปิดคู่มือของ Bootstrap ดูควบคู่ไปด้วยเช่นกันที่ http://getbootstrap.com/css/#grid
+                    บทความนี้เราจะพูดถึง Grid System ของ Bootstrap เวอร์ชั่น 3 ซึ่งจะแตกต่างกับเวอร์ชั่น 2 อยู่พอสมควร ถ้าจะถามผู้เขียนว่าทั้งสองเวอร์ชั่นมีความแตกต่างกันเยอะหรือเปล่า
+                    ผู้เขียนก็คงจะตอบว่าเวอร์ชั่น 3 นั้นถูกออกแบบมาได้ดีกว่า ยืดหยุ่นกว่า สามารถใช้งานกับอุปกรณ์ได้อย่างหลากหลาย
+                    และ ควบคุมการแสดงผลได้ง่ายกว่า ผู้เขียนจึงแนะนำให้ใช้ของใหม่แทนของเก่า คำถามหลักต่อไปคือ Grid System
+                    คืออะไร ? ถ้าพูดกันแบบบ้านๆ ทั่วไปเราก็คงจะบอกว่าเป็น Layout ที่คอยควบคุมวัตถุต่างๆ บนหน้าเว็บไซต์ให้แสดงผลได้อย่างถูกต้องตามหลัก
+                    box layout ซึ่งจะส่งผลดีต่อการเขียนหนึ่งหน้าเว็บไซต์ แต่สามารถใช้ร่วมกับอุปกรณ์ทุกขนาดหน้าจอ Grid system
+                    ของ Bootstrap เอง แบ่งออกเป็น 12 คอลัมน์ ถ้าให้เห็นภาพง่ายขึ้นก็น่าจะต้องบอกว่า เหมือนกับตาราง 1 แถว
+                    มี 12 คอลัมน์ประมาณนั้น ดังภาพด้านล่าง<br>
+                    <div class="container">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>.col-md-1</th>
+                                    <th>.col-md-1</th>
+                                    <th>.col-md-1</th>
+                                    <th>.col-md-1</th>
+                                    <th>.col-md-1</th>
+                                    <th>.col-md-1</th>
+                                    <th>.col-md-1</th>
+                                    <th>.col-md-1</th>
+                                    <th>.col-md-1</th>
+                                    <th>.col-md-1</th>
+                                    <th>.col-md-1</th>
+                                    <th>.col-md-1</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <br> รูปภาพจาก Bootstrap – แสดงให้เห็นว่า 1 row = 12 cols<br> ซึ่งหน่วยที่เป็น 12 นี้ เราสามารถเฉลี่ยแต่ละส่วนได้ตามความต้องการ
+                        อย่างเช่น
+                        <div class="container">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">.col-md-8</th>
+                                        <th>.col-md-4</th>
+                                    </tr>
+                                    <br>
+                                    <tr>
+                                        <th>.col-md-4</th>
+                                        <th>.col-md-4</th>
+                                        <th>.col-md-4</th>
+                                    </tr>
+                                    <br>
+                                    <tr>
+                                        <th>.col-md-6</th>
+                                        <th colspan="2">.col-md-6</th>
+                                    </tr>
+                                    <br>
+                                </thead>
+                            </table>
+                            รูปตัวอย่างการเฉลี่ยแต่ละส่วนให้ไม่เกิน 12 cols ผู้อ่านน่าจะพอเห็นภาพกันบ้างแล้ว ซึ่งเวลาเขียนโค้ดนี้เอง เราจะต้องเริ่มต้นด้วย
+                            class ที่ชื่อว่า “row” และสร้าง element ภายในด้วย prefix class เริ่มต้นว่า “col-หน่วยหน้าจอ-เลขคอลัมน์”
+                            สิ่งที่เราต้องระบุเพิ่มเติมลงไปก็มี 2 ค่าด้วยกันคือ หน่วยหน้าจอ และ เลขคอลัมน์
+
+                            <br>
+                            <br>
+                            <pre class="html" bgcolor="black">&lt;div class="row"&gt;
+    &lt;div class="col-sm-6"&gt; Columns A &lt;/div&gt;
+    &lt;div class="col-sm-6"&gt; Columns B &lt;/div&gt;
+&lt;/div&gt;</pre> หน่วยหน้าจอ – เลขคอลัมน์ ต้องระบุอะไร ?
+                            <br>
+                            <br> หน่วยหน้าจอใน Bootstrap เวอร์ชั่นใหม่นี้มีทั้งหมด 4 แบบให้เลือกเรียกใช้ได้ตามสะดวก ซึ่งแต่ละหน่วยก็ควบคุมการแสดงผลตามขนาดหน้าจอ(หน่วยเป็น
+                            pixel) ตามที่ Bootstrap กำหนดไว้ในตอนแรก ซึ่งดูได้จากรูปภาพของเว็บไซต์ Bootstrap เอง หรือภาพด้านล่างนี้
+                            <div class="container">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Extra small devices Phones(
+                                                <768px)</th>
+                                                    <th>Small devices Tables(>=768px)</th>
+                                                    <th>Medium devices \destops(>=992px)</th>
+                                                    <th>Large devices Deastops(>=1200px)</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Grid behavior</th>
+                                            <th>Horizontal at all times</th>
+                                            <th colspan="3">Collapsed to start, horizontal above breakpoints</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Container width</th>
+                                            <th>None(auto)</th>
+                                            <th>750px</th>
+                                            <th>970px</th>
+                                            <th>1170px</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Class prefix</th>
+                                            <th>.col-xs-</th>
+                                            <th>.col-sm-</th>
+                                            <th>.col-md-</th>
+                                            <th>.col-lg-</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                แสดงข้อมูลการเรียกใช้ในแต่ละหน่วยหน้าจอ
+                                <br>
+                                <br> สรุปจากภาพด้านบนง่ายๆดังนี้
+                                <br> XS :: ใช้กับหน้าจอขนาดเล็กกว่า Ipad แนวตั้งลงมา (หน้าจอสมาร์ทโฟนต่างๆ)<br> SM :: ขนาดหน้าจอตั้งแต่
+                                Ipad แนวตั้ง<br> MD :: ขนาดความกว้างต่ำสุดที่หน้าจอ Ipad แนวนอน<br> LG :: หน้าจอที่กว้างกว่า
+                                1200 pixels ขึ้นไป หรือให้เหมาะสมกับขนาดหน้าจอโน้ตบุคมาตราฐาน<br>
+                                <br> ส่วนหน่วยคอลัมน์นั้น เราสามารถระบุได้ตามใจชอบว่าจะใช้เท่าไหร่ก็ได้ตั้งแต่ 1-12 หรือ
+                                เฉลี่ยแต่ละวัตถุให้อยู่ในแถวเดียวกันโดยรวมแล้วไม่เกิน 12 หน่วย ซึ่งเวลาเขียนโค้ดเราสามารถกำหนดหน่วยหน้าจอในขนาดต่างๆ
+                                ให้แตกต่างกันออกไปตามการแสดงผลได้ด้วย ยกตัวอย่างเช่น<br>
+                                <br>
+                                <pre class="html">&lt;div class="row"&gt;
+    &lt;div class="col-xs-6 col-sm-4 col-md-5 col-lg-7"&gt;Column A&lt;/div&gt;
+    &lt;div class="col-xs-6 col-sm-8 col-md-7 col-lg-5"&gt;Column B&lt;/div&gt;
+&lt;/div&gt;</pre>
+<br>
+ซึ่งบางครั้งเราอาจจะไม่ต้องกำหนดหน่วยหน้าจอ<br>
+<br>
+<pre class="html">&lt;div class="row"&gt;
+    &lt;div class="col-md-9 col-lg-7"&gt;Column A&lt;/div&gt;
+    &lt;div class="col-md-3 col-lg-5"&gt;Column B&lt;/div&gt;
+&lt;/div&gt;</pre>
+<br>
+ถ้าเป็นอย่างในตัวอย่างด้านบน Bootstrap จะแสดงผลเป็น 2 คอลัมน์คือ A อยู่ทางด้านซ้ายที่ความกว้าง 9 คอลัมน์ และ คอลัมน์ B อยู่ด้านขวาที่ความกว้าง 3 คอลัมน์(สำหรับขนาดหน้าจอ iPad แนวนอน) ในทิศทางเดียวกันเมื่อผู้ใช้ไปเปิดเว็บไซต์ในหน้าจอที่กว้างกว่า 1200px หรือหน้าจอโน้ตบุคมาตราฐาน(1366×768) ก็จะได้คอลัมน์ A ที่มีความกว้างเหลือ 7 คอลัมน์, คอลัมน์ B กว้างขึ้นเป็น 5 คอลัมน์ ส่วนขนาดหน้าจอที่ไม่ได้กำหนดคือตั้งแต่ SM และ XS จะใช้ความกว้าง 12 คอลัมน์ไปโดยปริยาย
+
+ครอบด้วย Container
+
+ที่ผ่านมาผู้อ่านใช้ row ในการครอบ col ต่างๆ แต่พอหากเรานำไปใช้ในการเขียนเว็บไซต์จริงๆ แล้ว จะเห็นว่าความกว้างนั้นไม่ได้ถูกกำหนดเอาไว้ ซึ่งไม่เป็นผลดีหากผู้ใช้นำไปเปิดในอุปกรณ์ที่มีหน้าจอขนาดกว้าง เราจึงต้องครอบเหนือจาก row ด้วย class ที่ชื่อว่า container ดังตัวอย่าง
+<pre class="html">&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-9 col-lg-7"&gt;Column A&lt;/div&gt;
+        &lt;div class="col-md-3 col-lg-5"&gt;Column B&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<br>
+ซึ่งข้อดีของ container เองคือช่วยควบคุมการแสดงผลระหว่างอุปกรณ์ได้โดยที่เราไม่จำเป็นต้องสร้าง class อื่นมาคอยจัดการวัตถุข้างในเอง เพราะ container นั้นถูกเขียนมาให้ยืดหยุ่นกับขนาดหน้าจอแต่ละแบบอยู่แล้ว
+</body>
+
+</html>
